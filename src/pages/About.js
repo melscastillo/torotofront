@@ -1,11 +1,25 @@
+//Imports otras librerias
 import { Icon, InlineIcon } from "@iconify/react";
 import outlineWaterDamage from "@iconify-icons/ic/outline-water-damage";
 import earthOutline from "@iconify-icons/ion/earth-outline";
+import Carousel from "react-elastic-carousel";
+//Imports proyecto
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import heroImage from "../images/photo-1549656400-eb39ffdab352.jpeg";
+import chiapas from "../images/chiapas.jpeg";
+import hidalgo from "../images/hidalgo.jpg";
+import oaxaca from "../images/oaxaca.jpg";
 import circles from "../images/circles.png";
 import stripe from "../images/stripe.svg";
+
+const Item = ({ image }) => {
+  return (
+    <div className="carouselItem">
+      <img src={image} alt="" />
+    </div>
+  );
+};
 
 const About = () => {
   return (
@@ -84,7 +98,13 @@ const About = () => {
           disponibles para compra!
         </p>
       </div>
-      <div></div>
+      <div>
+        <Carousel itemsToShow={1}>
+          <Item image={chiapas} />
+          <Item image={hidalgo} />
+          <Item image={oaxaca} />
+        </Carousel>
+      </div>
       <Footer />
     </>
   );

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Finca Guadalupe Zajú",
+    "type": "Forestry",
+    "availableOffsets": 1200,
+    "totalOffsets": 25000,
+    "location": "Chiapas, MEX",
+    "img": "https://admin.toroto.mx/toroto/img/projects/conservation-and-management-of-forest-reserve-in-chiapas_21604961266.jpeg",
+    "description": "La producción de café tiene un impacto importante que debe ser medido, reducido y compensado. Estamos trabajando con un conjunto de fincas en Chiapas para hacer justamente eso. Lo primero es medir, de forma apegada a estándares internacionales, la huella de gases de efecto invernadero de las fincas. Después diseñaremos un plan para compensar estos gases aumentando la cantidad de carbono en la superficie de cada finca usando técnicas agroforestales y el manejo de 150 hectáreas de conservación de selva. Estas hectáreas son cuidadosamente monitoreadas en 100 sitios físicos que nos permiten medir precisamente la cantidad de carbono almacenada en la selva. Además de sugerir e implementar estrategias para reducir el impacto ambiental de las fincas, Toroto logrará certificar la compensación de emisiones y captura de carbono en sitio a través de la emisión de créditos de carbono de la Reserva de Acción Climática de California, que tiene uno de los protocolos forestales más robustos del mundo.",
+    "developer": "Toroto",
+    "verifier": "Climate Action Reserve",
+    "area": "150 Ha",
+    "jobsGenerated": 150,
+    "coBenefits": [
+      "Generador de empleos locales",
+      "Reserva ecológica de 150 Hectáreas",
+      "Acervo de carbono en selva alta"
+    ],
+    "offsetPrice": "10.5 USD",
+    "flora": ["Puma", "Ocelote", "Buitre", "Zorro"]
+  },
+  {
+    "name": "Recarga de Acuífero en Hidalgo",
+    "type": "Water recharge program",
+    "availableOffsets": 2200,
+    "totalOffsets": 25000,
+    "location": "Hidalgo, MEX",
+    "img": "https://admin.toroto.mx/toroto/img/projects/aquifer-recharge-in-central-mexico_01604963509.jpg",
+    "description": "El ingrediente principal de esta solución basada en la naturaleza es la lluvia. El agua de lluvia que cae en una ladera puede evaporarse, escurrirse o infiltrarse al subsuelo. Cuando se infiltra en el subsuelo puede recargar un manto acuífero y mantener las necesidades hídricas de poblaciones enormes. El objetivo del programa es aumentar la infiltración y reducir el escurrimiento del agua de lluvia que cae en el Valle de Apan, parte de la Altiplanicie Pulquera. Lo que hacemos es reforestar y mejorar la salud del ecosistema en la zona del acuífero; el programa contempla la siembra de más de 250,000 ejemplares de maguey, nopal, sabino, encino y pino. Además, se colocarán 12 presas de gaviones para evitar la erosión, y más de 9 kilómetros de barreras de piedra acomodada en curvas de nivel para evitar escurrimiento de suelo.",
+    "developer": "Toroto",
+    "verifier": "Grupo Modelo",
+    "area": "150 Ha",
+    "jobsGenerated": 235,
+    "coBenefits": [
+      "Generador de empleos locales",
+      "Recarga de manto aquífero",
+      "Construcción de obras de retención de suelos"
+    ],
+    "offsetPrice": "7.5 USD",
+    "flora": ["Serpiente de Cascabel", "Oruga Urticante", "Rana Plegada"]
+  },
+  {
+    "name": "ICICO (Integradora de Comunidades Indígenas y Campesinas de Oaxaca)",
+    "type": "Forestry",
+    "availableOffsets": 1200,
+    "totalOffsets": 25000,
+    "location": "Oaxaca, MEX",
+    "img": "https://admin.toroto.mx/toroto/img/projects/icico-project-of-the-integrator-of-indigenous-and-peasant-communities-of-oaxaca_01606342804.jpg",
+    "description": "El manejo de bosques se traduce en preservar grandes áreas de bosque, y también hacer las intervenciones necesarias para que el bosque capture tanto CO2 como sea posible. Esto incluye hacer reforestaciones y podas de largo alcance. Una parte extremadamente importante del trabajo es la prevención de incendios forestales, con el objetivo de que el bosque no se queme durante la época de incendios o que el incendio sea rápidamente sofocado antes de que crezca. La salud del bosque está permanentemente monitoreada, animales como venados, jaguares y jabalíes son constantemente fotografiados por cámaras-trampa. Un bosque virgen captura aproximadamente 4 toneladas de CO2 por hectárea anualmente. Con estas técnicas de manejo de bosques, pagadas por nuestros miembros, una hectárea puede capturar hasta 18 toneladas de CO2.",
+    "developer": "Toroto",
+    "verifier": "Climate Action Reserve",
+    "area": "1500 Ha",
+    "jobsGenerated": 1000,
+    "coBenefits": [
+      "+ 30,000 toneladas de CO2 capturadas en 2019",
+      "714 comuneros se integraron y trabajaron en este proyecto",
+      "Certificado por Rainforest Alliance y la Reserva de Acción Climática"
+    ],
+    "offsetPrice": "10.5 USD",
+    "flora": []
+  }
+]

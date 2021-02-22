@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Bienvenidos a Toroto App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto se encuentra disponible en el siguiente repositorio: https://github.com/melscastillo/torotofront
 
-## Available Scripts
+## Liga de Notion
 
-In the project directory, you can run:
+https://www.notion.so/FRONT-END-DESAF-O-TOROTO-d45a5a0af3e74aeda113d5eb823e5cf0
 
-### `yarn start`
+### ¿Cómo correr el proyecto?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm run start`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Abre [http://localhost:3000](http://localhost:3000) para verlo en el navegador.
 
-### `yarn test`
+### ¿De qué va el proyecto?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La aplicación tiene el objetivo de facilitar al usuario la visualización y conocimieto de los proyectos que cuentan con bonos de carbono disponibles para adquisión y que, si así lo desean, puedan adquirir los que necesiten para compensar su huella de carbono.
 
-### `yarn build`
+Una de las cosas en las que, poniendome en la situación del usuario, decidí agregar, fue una landing page y una página informativa en donde se explicara de manera breve la necesidad de compensar la huella de carbono y como podría hacerse esta compensación. Me tomé la libertad de integrar elementos del PDF del desafío para complementar esta sección.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Los componentes creados fueron tres: header, footer y ProjectCards. Estas últimas aparecen en la landing page con información breve acerca de los proyectos y un botón para que el usuario pueda ir si desea más información.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pages
 
-### `yarn eject`
+Las pages quedaron determinadas de acuerdo al flujo que el usuario puede seguir al usar la aplicación. Tenía considerado aumentar el flujo de la compra de bonos, así como una certificación expedida al usuario (esto lo vi en uno de los sitios web de referencia y me pareció interesante) y, que ya hecha la compra, la persona (física o moral) pase a formar parte de la lista de compradores de carbono, en donde puede comprobarse la posesión de los bonos.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Estilos en SASS
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Los estilos quedaron divididos de acuerdo a los components y a las pages. Cada uno cuenta con los querys necesarios para hacer el responsive design.

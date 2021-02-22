@@ -1,3 +1,4 @@
+import { useHistory } from "react-router-dom";
 import { Icon, InlineIcon } from "@iconify/react";
 import treeIcon from "@iconify-icons/bi/tree";
 import locationIcon from "@iconify-icons/akar-icons/location";
@@ -5,7 +6,11 @@ import circleCheck from "@iconify-icons/akar-icons/circle-check";
 import airIcon from "@iconify-icons/akar-icons/air";
 
 const ProjectCard = ({ project }) => {
+  const history = useHistory();
   const { name, location, img, totalOffsets, availableOffsets } = project;
+  const goToProject = () => {
+    history.push(`/project/${name}`);
+  };
   return (
     <div className="project-card">
       <div className="project-card-inner">
@@ -30,7 +35,7 @@ const ProjectCard = ({ project }) => {
               Disponibles= {availableOffsets}
             </p>
           </div>
-          <button>Conocer el proyecto</button>
+          <button onClick={goToProject}>Conocer el proyecto</button>
         </div>
         <div className="project-card-image">
           <img src={img} alt={name} />

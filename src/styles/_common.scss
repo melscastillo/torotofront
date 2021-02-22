@@ -1,0 +1,44 @@
+.heading {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 2;
+  padding: 2px 0;
+  margin: 0px auto;
+  padding-top: 60px;
+  padding-left: 50px;
+  span {
+    display: inline;
+    padding: 0.45rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  &.bg-blue span {
+    background-color: $toroto-blue;
+  }
+  &.bg-yellow span {
+    background-color: $toroto-yellow;
+  }
+  &.bg-magenta span {
+    background-color: $toroto-magenta;
+  }
+  &.bg-green span {
+    background-color: $toroto-green;
+  }
+}
+
+.stripe {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  background-repeat: repeat-x;
+  margin-top: 150px;
+}
+.circles {
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}

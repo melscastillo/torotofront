@@ -1,0 +1,143 @@
+.about-project {
+  height: 552px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  h1 {
+    margin-left: 50px;
+  }
+  p {
+    color: white;
+    font-weight: 400;
+    font-size: 44px;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+}
+
+.img-project {
+  max-width: 800px;
+  min-width: 600px;
+  margin: 0 auto;
+  padding-top: 70px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  > div {
+    display: flex;
+    align-items: center;
+    border-right: 0px;
+    padding-left: 50px;
+    p {
+      font-weight: 400;
+      font-size: 34px;
+      padding-right: 80px;
+      padding-left: 50px;
+    }
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}
+
+.project-info {
+  font-weight: 300;
+  font-size: 34px;
+  text-align: justify;
+  line-height: 62px;
+  padding: 0 50px 15px;
+}
+.aditional-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  > div {
+    display: flex;
+    flex: 1 1 50%;
+    align-items: center;
+    p {
+      font-weight: 400;
+      font-size: 34px;
+      padding-left: 30px;
+    }
+  }
+}
+
+.bono-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  padding-bottom: 50px;
+  > div {
+    display: flex;
+    align-items: center;
+    border-right: 0;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    p {
+      font-weight: 400;
+      font-size: 34px;
+      padding-right: 80px;
+      padding-left: 50px;
+    }
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}
+button.buy {
+  display: block;
+  margin: 0 auto;
+  width: 537px;
+  height: 193px;
+  border-radius: 16px;
+  color: $toroto-magenta;
+  background-color: $toroto-yellow;
+  font-weight: 600;
+  font-size: 51px;
+  margin-bottom: 80px;
+  margin-top: -40px;
+  border: 0;
+}
+
+@media only screen and (min-width: $breakpoint-sm) {
+  .basic-info {
+    flex-direction: row;
+    > div {
+      border-right: 5px solid $toroto-blue;
+    }
+  }
+  .aditional-info {
+    flex-direction: row;
+    padding-left: 200px;
+  }
+  .bono-icon {
+    flex-direction: row;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    > div {
+      border-right: 5px solid $toroto-blue;
+    }
+  }
+}

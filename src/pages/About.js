@@ -1,8 +1,11 @@
 //Imports otras librerias
+import { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import { Icon, InlineIcon } from "@iconify/react";
 import outlineWaterDamage from "@iconify-icons/ic/outline-water-damage";
 import earthOutline from "@iconify-icons/ion/earth-outline";
-import Carousel from "react-elastic-carousel";
+import Carousel from "@brainhubeu/react-carousel";
+import "@brainhubeu/react-carousel/lib/style.css";
 //Imports proyecto
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -13,15 +16,36 @@ import oaxaca from "../images/oaxaca.jpg";
 import circles from "../images/circles.png";
 import stripe from "../images/stripe.svg";
 
-const Item = ({ image }) => {
+const Item = ({ image, text, history }) => {
+  const goToProject = () => {
+    history.push(`/project/${text}`);
+  };
   return (
     <div className="carouselItem">
-      <img src={image} alt="" />
+      <img src={image} alt={text} />
+      <h2
+        className="heading bg-green"
+        onClick={goToProject}
+        style={{ cursor: "pointer" }}
+      >
+        <span>{text}</span>
+      </h2>
     </div>
   );
 };
 
 const About = () => {
+  const history = useHistory();
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      const response = await fetch("/projects.json", {});
+      const json = await response.json();
+      setProjects(json);
+    };
+    fetchProjects();
+  }, []);
   return (
     <>
       <Header />
@@ -98,11 +122,13 @@ const About = () => {
           disponibles para compra!
         </p>
       </div>
-      <div>
-        <Carousel itemsToShow={1}>
-          <Item image={chiapas} />
-          <Item image={hidalgo} />
-          <Item image={oaxaca} />
+      <div className="carousel">
+        <Carousel>
+          {projects.map((project) => {
+            return (
+              <Item image={project.img} history={history} text={project.name} />
+            );
+          })}
         </Carousel>
       </div>
       <Footer />
